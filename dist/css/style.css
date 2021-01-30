@@ -21,7 +21,7 @@ body {
 }
 
 .card-container {
-  height: calc(100vh - 2rem);
+  height: 100vh;
   background-color: #19a2ae;
   position: relative;
   overflow: hidden;
