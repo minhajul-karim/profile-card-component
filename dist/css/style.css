@@ -3,10 +3,17 @@
   padding: 0;
 }
 
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
 .attribution {
-  font-size: 11px;
+  font-size: 1rem;
   text-align: center;
   height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .attribution a {
@@ -25,18 +32,26 @@
 
 .card-container .top-background {
   position: absolute;
-  right: 50%;
-  bottom: 30%;
+  right: 52%;
+  bottom: 32%;
 }
 
 .card-container .bottom-background {
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: 47%;
+  top: 52%;
 }
 
 .card-container .card {
+  width: 21rem;
   z-index: 100;
+}
+
+.card-container .card-header {
+  height: 8.5rem;
+  background: url("../images/bg-pattern-card.svg") no-repeat;
+  background-size: cover;
+  border-radius: 1rem 1rem 0 0;
 }
 
 .card-container .card-body {
@@ -45,6 +60,44 @@
   justify-content: center;
   align-items: center;
   background-color: #fff;
+  text-align: center;
+  border-bottom: 0.1rem solid rgba(106, 111, 129, 0.1);
+  position: relative;
+}
+
+.card-container .card-body .profile-image {
+  width: 5.5rem;
+  height: 5.5rem;
+  border: 0.3rem solid #fff;
+  border-radius: 50%;
+  background: url(../images/image-victor.jpg) no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 36%;
+  top: -35%;
+}
+
+.card-container .card-body .introduction {
+  margin-top: 4.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-container .card-body h3 {
+  font-size: 18px;
+  color: #2d3248;
+}
+
+.card-container .card-body .age {
+  color: #6a6f81;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-left: 0.4rem;
+}
+
+.card-container .card-body p {
+  color: #6a6f81;
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .card-container .card-footer {
@@ -52,4 +105,19 @@
   justify-content: space-around;
   align-items: center;
   background-color: #fff;
+  text-align: center;
+  padding: 1.7rem;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.card-container .card-footer h3 {
+  font-size: 1.1rem;
+  color: #2d3248;
+}
+
+.card-container .card-footer p {
+  color: #6a6f81;
+  font-size: 0.6rem;
+  letter-spacing: 0.1rem;
+  margin-top: 0.6rem;
 }

@@ -3,10 +3,17 @@
   padding: 0;
 }
 
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
 .attribution {
-  font-size: 11px;
+  font-size: 1rem;
   text-align: center;
   height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .attribution a {
@@ -21,19 +28,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   .top-background {
     position: absolute;
-    right: 50%;
-    bottom: 30%;
+    right: 52%;
+    bottom: 32%;
   }
+
   .bottom-background {
     position: absolute;
-    left: 50%;
-    top: 50%;
+    left: 47%;
+    top: 52%;
   }
 
   .card {
+    width: 21rem;
     z-index: 100;
+  }
+
+  .card-header {
+    height: 8.5rem;
+    background: url('../images/bg-pattern-card.svg') no-repeat;
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
   }
 
   .card-body {
@@ -42,11 +59,57 @@
     justify-content: center;
     align-items: center;
     background-color: #fff;
+    text-align: center;
+    border-bottom: 0.1rem solid hsla(227, 10%, 46%, 0.1);
+    position: relative;
+    .profile-image {
+      width: 5.5rem;
+      height: 5.5rem;
+      border: 0.3rem solid #fff;
+      border-radius: 50%;
+      background: url(../images/image-victor.jpg) no-repeat;
+      background-size: cover;
+      position: absolute;
+      left: 36%;
+      top: -35%;
+    }
+    .introduction {
+      margin-top: 4.5rem;
+      margin-bottom: 1.5rem;
+    }
+    h3 {
+      font-size: 18px;
+      color: hsl(229, 23%, 23%);
+    }
+    .age {
+      color: hsl(227, 10%, 46%);
+      font-size: 1.1rem;
+      font-weight: 400;
+      margin-left: 0.4rem;
+    }
+    p {
+      color: hsl(227, 10%, 46%);
+      margin-top: 0.8rem;
+      font-size: 0.9rem;
+    }
   }
   .card-footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #fff;
+    text-align: center;
+    padding: 1.7rem;
+    border-radius: 0 0 1rem 1rem;
+    h3 {
+      font-size: 1.1rem;
+      color: hsl(229, 23%, 23%);
+    }
+    p {
+      color: hsl(227, 10%, 46%);
+      font-size: 0.6rem;
+      letter-spacing: 0.1rem;
+      margin-top: 0.6rem;
+    }
   }
 }
